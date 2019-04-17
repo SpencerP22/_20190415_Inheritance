@@ -2,7 +2,7 @@ package edu.missouriwestern.spalmeter.csc254.people;
 
 import java.time.LocalDate;
 
-public class Person implements Comparable<Person>{
+public abstract class Person implements Comparable<Person>{
     private String firstName;
     private String lastName;
     private LocalDate entry;
@@ -58,4 +58,5 @@ public class Person implements Comparable<Person>{
             return this.firstName.compareToIgnoreCase(o.firstName);
         return result;
     }
+    public abstract String getContact();
 }
